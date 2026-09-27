@@ -59,7 +59,7 @@ so you can jump straight to **Run the API** / **Run the dashboard** after
 this step — no training required to try it out.
 
 ```bash
-git clone <this-repo-url> && cd ProjectMSME
+git clone https://github.com/nidhim27/msme-financial-health-report.git && cd msme-financial-health-report
 python3 -m venv .venv && source .venv/bin/activate   # optional but recommended
 pip install -r requirements.txt
 ```
@@ -131,6 +131,8 @@ since the dataset has no monthly history — see the note in
 
 ## GitHub / deployment
 
-Share the GitHub repo URL for this project once pushed, and optionally a
-deployed link (e.g., the API on Render/Fly.io and the dashboard on
-Streamlit Community Cloud) per the assignment's submission note.
+GitHub repo: https://github.com/nidhim27/msme-financial-health-report
+
+A deployed link (e.g., the API on Render/Fly.io and the dashboard on
+Streamlit Community Cloud) is an optional added extra per the assignment's
+submission note — not yet set up.
