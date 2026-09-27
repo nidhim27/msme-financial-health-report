@@ -314,6 +314,9 @@ def main():
     else:
         render_portfolio()
 
+    st.sidebar.markdown("---")
+    st.sidebar.caption("Created by Nidhi Mehra")
+
 
 if __name__ == "__main__":
     main()

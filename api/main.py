@@ -28,7 +28,8 @@ from src.trends import build_trend_bundle
 
 app = FastAPI(
     title="Cars24 MSME Financial Health Report API",
-    description="Alternative-data-driven Financial Health Card, credit scoring, and explainability for MSMEs.",
+    description="Alternative-data-driven Financial Health Card, credit scoring, and explainability for MSMEs.\n\n"
+                "Created by Nidhi Mehra",
     version="1.0.0",
 )
 

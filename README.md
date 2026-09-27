@@ -1,5 +1,7 @@
 # Cars24 MSME Financial Health Report
 
+**Created by Nidhi Mehra**
+
 An alternative-data-driven **Financial Health Card** and explainable credit
 scoring system for MSMEs with limited or no traditional credit history
 (New-to-Credit / New-to-Bank), built on a synthetic 50,000-MSME dataset
