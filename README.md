@@ -135,5 +135,8 @@ GitHub repo: https://github.com/nidhim27/msme-financial-health-report
 
 Live dashboard: https://msme-financial-health-report-cdnq5vhbbozcnf9jbr6pdk.streamlit.app
 
-A deployed API link (e.g., on Render/Fly.io) is an optional added extra per
-the assignment's submission note — not yet set up.
+Live API: https://msme-financial-health-report.onrender.com
+(interactive docs: https://msme-financial-health-report.onrender.com/docs)
+
+Note: the API is on Render's free tier, which sleeps after 15 minutes of
+inactivity — the first request after a while takes 30-50 seconds to wake up.
