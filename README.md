@@ -133,6 +133,7 @@ since the dataset has no monthly history — see the note in
 
 GitHub repo: https://github.com/nidhim27/msme-financial-health-report
 
-A deployed link (e.g., the API on Render/Fly.io and the dashboard on
-Streamlit Community Cloud) is an optional added extra per the assignment's
-submission note — not yet set up.
+Live dashboard: https://msme-financial-health-report-cdnq5vhbbozcnf9jbr6pdk.streamlit.app
+
+A deployed API link (e.g., on Render/Fly.io) is an optional added extra per
+the assignment's submission note — not yet set up.
