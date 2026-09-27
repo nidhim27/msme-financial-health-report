@@ -19,6 +19,7 @@ from typing import Optional
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import RedirectResponse
 
 from api.schemas import (
     CreditRecommendationResponse, HealthCardResponse, IngestResponse, MSMERawInput,
@@ -53,6 +54,11 @@ def _resolve_raw_record(msme_id: str) -> dict:
         return get_raw_record(msme_id)
     except KeyError:
         raise HTTPException(status_code=404, detail=f"MSME_ID '{msme_id}' not found")
+
+
+@app.get("/", include_in_schema=False)
+def root():
+    return RedirectResponse(url="/docs")
 
 
 @app.get("/healthz", tags=["system"])
