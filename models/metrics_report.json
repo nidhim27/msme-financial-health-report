@@ -1,0 +1,113 @@
+{
+  "n_train": 40000,
+  "n_test": 10000,
+  "n_features": 62,
+  "subscores": {
+    "Business_Stability_Score": {
+      "r2": 0.9995,
+      "mae": 0.1312,
+      "rmse": 0.1709
+    },
+    "Cashflow_Score": {
+      "r2": 0.9992,
+      "mae": 0.1428,
+      "rmse": 0.2111
+    },
+    "Revenue_Consistency_Score": {
+      "r2": 0.999,
+      "mae": 0.1815,
+      "rmse": 0.256
+    },
+    "Payment_Behaviour_Score": {
+      "r2": 0.9991,
+      "mae": 0.1059,
+      "rmse": 0.1782
+    },
+    "Business_Growth_Score": {
+      "r2": 0.9997,
+      "mae": 0.1212,
+      "rmse": 0.2018
+    },
+    "Compliance_Score": {
+      "r2": 0.9997,
+      "mae": 0.0736,
+      "rmse": 0.1248
+    }
+  },
+  "overall_score": {
+    "r2": 0.8693,
+    "mae": 1.8086,
+    "rmse": 2.2599
+  },
+  "probability_of_default": {
+    "r2": 0.9084,
+    "mae": 0.02,
+    "rmse": 0.0283
+  },
+  "risk_category": {
+    "accuracy": 0.8326,
+    "f1_macro": 0.8366,
+    "confusion_matrix": [
+      [
+        2455,
+        521,
+        0
+      ],
+      [
+        427,
+        3737,
+        293
+      ],
+      [
+        0,
+        433,
+        2134
+      ]
+    ],
+    "labels": [
+      "Low",
+      "Medium",
+      "High"
+    ]
+  },
+  "eligibility": {
+    "accuracy": 0.9275,
+    "f1_macro": 0.9039,
+    "confusion_matrix": [
+      [
+        2159,
+        408
+      ],
+      [
+        317,
+        7116
+      ]
+    ],
+    "labels": [
+      "No",
+      "Yes"
+    ]
+  },
+  "credit_limit_eligible_only": {
+    "r2": 0.929,
+    "mae": 148081.8594,
+    "rmse": 431987.3438
+  },
+  "overall_score_top_features": {
+    "GST_Filing_Timeliness_Pct": 0.4368000030517578,
+    "Cashflow_Stability_Index": 0.18449999392032623,
+    "Salary_Consistency_Pct": 0.10350000113248825,
+    "Overdraft_Usage_Ratio": 0.052799999713897705,
+    "Vendor_Payment_Timeliness_Pct": 0.05009999871253967,
+    "Revenue_Growth_Rate_Pct": 0.029899999499320984,
+    "Transaction_Volatility_Index": 0.02290000021457672,
+    "Customer_Concentration_Ratio": 0.022700000554323196,
+    "Avg_Invoice_Payment_Delay_Days": 0.014999999664723873,
+    "Years_in_Operation": 0.00930000003427267,
+    "EMI_On_Time_Rate_Pct": 0.005100000184029341,
+    "Credit_History_Months": 0.0034000000450760126,
+    "Industry_Healthcare": 0.0015999999595806003,
+    "Monthly_Bank_Credits_INR": 0.0015999999595806003,
+    "EMI_To_Bank_Credit_Ratio": 0.0015999999595806003
+  }
+}

@@ -4,10 +4,4 @@ __pycache__/
 venv/
 *.egg-info/
 .DS_Store
-data/msme_synthetic_50k.csv
-msme_synthetic_50k.zip
-data/processed/*.csv
-data/processed/*.parquet
-models/*.joblib
-models/*.json
 .ipynb_checkpoints/

@@ -25,8 +25,8 @@ reproducible from raw data via a training pipeline.
 ```
 ProjectMSME/
 ├── data/
-│   ├── msme_synthetic_50k.csv        # raw dataset (gitignored, from msme_synthetic_50k.zip)
-│   └── processed/health_cards_summary.csv  # batch-scored population (gitignored, regenerable)
+│   ├── msme_synthetic_50k.csv        # raw dataset (included, extracted from msme_synthetic_50k.zip)
+│   └── processed/health_cards_summary.csv  # batch-scored population (included, regenerable via src/batch_score.py)
 ├── src/
 │   ├── data_pipeline.py              # raw -> feature matrix (ratios + one-hot encoding)
 │   ├── train.py                      # trains all 9 supervised models
@@ -40,7 +40,7 @@ ProjectMSME/
 │   └── schemas.py                    # request/response models
 ├── dashboard/
 │   └── app.py                        # Streamlit dashboard
-├── models/                           # trained model artifacts (gitignored, regenerable via src/train.py)
+├── models/                           # trained model artifacts (included, regenerable via src/train.py + src/anomaly.py)
 ├── docs/
 │   ├── ARCHITECTURE.md               # end-to-end system architecture, data pipeline, AI/ML workflow, tech stack
 │   ├── INTEGRATION_STRATEGY.md       # ULI / OCEN / Account Aggregator / GSTN / banking API integration
@@ -52,14 +52,17 @@ ProjectMSME/
 
 ## Setup
 
+The dataset and trained models are already included in this repo (see below),
+so you can jump straight to **Run the API** / **Run the dashboard** after
+this step — no training required to try it out.
+
 ```bash
-cd ProjectMSME
+git clone <this-repo-url> && cd ProjectMSME
 python3 -m venv .venv && source .venv/bin/activate   # optional but recommended
 pip install -r requirements.txt
-unzip -o msme_synthetic_50k.zip -d data              # produces data/msme_synthetic_50k.csv
 ```
 
-## Reproduce the models (from raw data)
+## Reproduce the models from scratch (optional)
 
 ```bash
 python -m src.train          # trains the 6 sub-score + overall score + PD + risk + eligibility + credit-limit models
